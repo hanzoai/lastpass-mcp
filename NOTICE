@@ -1,0 +1,23 @@
+@hanzo/lastpass-mcp
+Copyright (c) 2026 Hanzo AI Inc. (https://hanzo.ai)
+
+The TypeScript MCP server, pure Node.js LastPass Vault protocol implementation,
+ZAP browser autofill bridge, and Hanzo KMS / Hanzo Egress custody integration
+under `src/` and `test/` are licensed under the Apache License, Version 2.0.
+
+-------------------------------------------------------------------------------
+Third-Party Vendored Upstream Notice (`c-cli/`)
+-------------------------------------------------------------------------------
+
+Directory `c-cli/` contains upstream `lastpass/lastpass-cli`
+(https://github.com/lastpass/lastpass-cli), Copyright (C) 2014-2026 LastPass.
+
+`c-cli/` is distributed under the terms of the GNU General Public License
+version 2 (or any later version) with the OpenSSL linking exception, as set
+forth in `c-cli/COPYING` and `c-cli/LICENSE.OpenSSL`.
+
+`@hanzo/lastpass-mcp` interacts with any compiled `lpass` binary solely at
+arm's length as a separate subprocess via `execFile` over standard CLI flags
+and JSON output streams (`src/lpass-cli.ts`), and also includes an independent
+clean-room TypeScript implementation of the LastPass Vault wire protocol using
+Node's built-in `node:crypto` module (`src/vault-protocol.ts`).
