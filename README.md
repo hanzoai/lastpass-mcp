@@ -1,5 +1,7 @@
 # `@hanzo/lastpass-mcp` (`hanzoai/lastpass-mcp`)
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/lastpass-mcp&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/lastpass-mcp&ref=main&action=edit)
+
 Native LastPass Model Context Protocol (MCP) server, pure Node.js LastPass Vault protocol client, local ZAP browser autofill bridge, and **Hanzo KMS / Hanzo Egress** custody integration.
 
 ## Security Law: Never Return a Credential
